@@ -1,0 +1,126 @@
+.collection {
+  /* display: flex; */
+  max-width: 1360px;
+  /* justify-content: space-between; */
+  margin: 32px auto;
+  align-items: center;
+  /* background-color: #7d7d7d; */
+  font-family: 'YandexSans';
+  font-weight: 400;
+}
+
+.collection-header {
+  font-size: 48px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.collection-container {
+  display: grid;
+  width: 1360px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.collection-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: #fefefe;
+}
+
+.list-first {
+  grid-auto-rows: 190px 190px 240px;
+}
+
+.list-second {
+  grid-auto-rows: 240px 190px 190px;
+}
+
+.collection-list__item {
+  background-color: #6e6e6e;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.item-first {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-image: url(./../../images/one-img.jpg);
+}
+
+.item-last {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  background-image: url(./../../images/six.jpg);
+  background-position: 50% 20%;
+}
+
+.item-two {
+  background-image: url(./../../images/two-img.jpg);
+  background-position: 50% 50%;
+}
+
+.item-three {
+  background-image: url(./../../images/three.jpg);
+  background-position: 50% 50%;
+}
+
+.item-four {
+  background-image: url(./../../images/four.jpg);
+  background-position: 50% 35%;
+}
+
+.item-five {
+  background-image: url(./../../images/five.jpg);
+  background-position: 50% 50%;
+}
+
+.collection-list__item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 16px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.item-link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.item-header {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+  margin: 0 0 10px 20px;
+  width: 190px;
+  z-index: 1;
+}
+
+.item-header__weight {
+  width: 600px;
+}
+
+.item-text {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 0 20px;
+  z-index: 1;
+}

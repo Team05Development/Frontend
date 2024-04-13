@@ -1,0 +1,43 @@
+.card-list__container {
+  max-width: 1360px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.card-list {
+  display: flex;
+  width: 1360px;
+  justify-content: space-between;
+  font-family: 'YandexSans';
+  font-weight: 400;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.button_type_open-more {
+  padding: 12px 24px;
+  border: 2px solid #342CE8;
+  border-radius: 16px;
+  background-color: #fefefe;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button_type_open-more:hover {
+  border: 2px solid #3029D7;
+  background-color: #3029D7;
+  color: #fefefe;
+}
+
+.button_type_open-more:active {
+  border: 2px solid #1F15F9;
+  background-color: #1F15F9;
+  color: #fefefe;
+}

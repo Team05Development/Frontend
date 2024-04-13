@@ -1,0 +1,16 @@
+.similar {
+  /* display: flex; */
+  max-width: 1360px;
+  /* justify-content: space-between; */
+  margin: 32px auto;
+  align-items: center;
+  /* background-color: #7d7d7d; */
+  font-family: 'YandexSans';
+  font-weight: 400;
+}
+
+.similar__header {
+  font-size: 48px;
+  line-height: 42px;
+  font-weight: bold;
+}

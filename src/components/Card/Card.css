@@ -1,0 +1,126 @@
+.card {
+  width: 440px;
+  min-height: 426px;
+  margin: 32px auto;
+  align-items: center;
+  background-color: #fff;
+  font-family: 'YandexSans';
+  font-weight: 400;
+  border-radius: 16px;
+  box-shadow: 1px 3px 13px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card__info {
+  background-color: #eccdf7;
+  border-radius: 16px 16px 0 0;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card__image {
+  width: 440px;
+  height: 240px;
+  border-radius: 16px 16px 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.card-wight-slim {
+  width: 325px;
+}
+
+.card__info-container {
+  padding: 0;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 1;
+}
+
+.card__info-data {
+  display: flex;
+}
+
+.card__info-text {
+  background-color: #fefefe;
+  border-radius: 16px;
+  font-size: 23px;
+  line-height: 42px;
+  text-align: center;
+  padding: 4px 12px;
+  margin: 0 5px 5px 0;
+}
+
+.button__like {
+  background-color: #fefefe;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin: 16px;
+  z-index: 1;
+}
+
+.like-on {
+  background-image: url(./../../images/like-full.svg);
+}
+
+.like-off {
+  background-image: url(./../../images/like-empty.svg);
+}
+
+.card__header {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-left: 16px;
+  height: 93px;
+}
+
+.card__decoration {
+  width: 92%;
+  height: 2px;
+  background-color: #E5E8EC;
+  margin: 0 auto;
+}
+
+.card__reg-container {
+  position: relative;
+
+}
+
+.card__text-reg {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+  padding-left: 25px;
+}
+
+.card__reg-color {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 16px;
+  top: 3.5px;
+}
+
+.reg-on {
+  background-image: url(./../../images/Ellipse-green.svg);
+}
+
+.reg-off {
+  background-image: url(./../../images/Ellipse-red.svg);
+}
+
+.reg-past {
+  background-image: url(./../../images/Ellipse-past.svg);
+}

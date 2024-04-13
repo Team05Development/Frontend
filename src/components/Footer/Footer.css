@@ -1,0 +1,91 @@
+.footer {
+  width: 100%;
+  background-color: #212529;
+  color: #fefefe;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1360px;
+  /* justify-content: space-between; */
+  margin: 24px auto;
+  align-items: center;
+  /* background-color: #86b2de; */
+  height: 322px;
+}
+
+.info-container {
+  display: flex;
+}
+
+.list-container {
+  width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer-list__item {
+  margin-bottom: 16px;
+  margin-right: 32px;
+}
+
+.footer-list__link {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.list-social {
+  display: flex;
+}
+
+.item-tw {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-image: url(./../../images/twitter.png);
+}
+
+.item-yt {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-image: url(./../../images/youtube.png);
+}
+
+.item-tg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-image: url(./../../images/telegram.png);
+}
+
+.item-vk {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(./../../images/vk.png);
+}
+
+.footer-decoration {
+  width: 1360px;
+  height: 2px;
+  background-color: #fefefe;
+}
+
+.footer-content {
+  font-weight: 400;
+  width: 1360px;
+  margin: 37px 0;
+}

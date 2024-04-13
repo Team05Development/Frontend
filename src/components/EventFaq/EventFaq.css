@@ -1,0 +1,38 @@
+.event-faq {
+  font-family: 'YandexSans';
+  font-weight: 400;
+  /* display: flex; */
+  max-width: 1360px;
+  /* justify-content: space-between; */
+  margin: 32px auto;
+  align-items: center;
+}
+
+.event-faq__header {
+  font-size: 48px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.faq-row-wrapper {
+  .faq-body {
+      .faq-row {
+          .row-title {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+          }
+
+          .row-content {
+              .row-content-text {
+                font-size: 20px;
+                line-height: 32px;
+              }
+          }
+      }
+      .icon-wrapper {
+        /* background-color: #f03131; */
+        /* background-image: url(./../../images/plus.svg); */
+      }
+  }
+}
