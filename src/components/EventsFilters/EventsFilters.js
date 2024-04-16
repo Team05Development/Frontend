@@ -5,12 +5,13 @@ import imgnotfound from './../../images/notfound.png'
 
 function EventsFilters(props) {
 
-  const test = false;
-
   return (
     <section>
-      {test ? (
-        <CardList eventsPage={props.eventsPage} cards={props.cards} />
+      {props.isTrueSearch ? (
+        <div className='page-events'>
+          <h1 className='filter-events__header'>Подходящие события</h1>
+          <CardList eventsPage={props.eventsPage} cards={props.cardsByDate} />
+        </div>
       ) : (
         <div className='notfound'>
           <div className='notfound__info'>

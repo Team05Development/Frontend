@@ -1,9 +1,7 @@
 .random-coffee {
   font-family: 'YandexSans';
   font-weight: 400;
-  /* display: flex; */
   max-width: 1360px;
-  /* justify-content: space-between; */
   margin: 64px auto;
   align-items: center;
 }
@@ -40,10 +38,6 @@
   min-height: 408px;
 }
 
-.list-item___img {
-
-}
-
 .list-item___header {
   font-size: 32px;
   font-weight: 500;
@@ -57,10 +51,6 @@
   line-height: 32px;
   text-align: left;
   margin: 0;
-}
-
-.how-it-works {
-  
 }
 
 .how-it-works__header {  
@@ -123,6 +113,10 @@
   background-color: #342CE8;
   border: none;
   cursor: pointer;
+}
+
+.how-it-works__button:hover {
+  background-color: #3029D7;
 }
 
 

@@ -1,6 +1,4 @@
 import './Promo.css';
-// import logo from './../../images/logo.svg';
-// import coffee from './../../images/coffee.svg';
 import { Link } from 'react-router-dom';
 
 function Promo() {
@@ -9,7 +7,7 @@ function Promo() {
         <div className="slider">
           <div className="slider-list">
             <div className="slider-track">
-                <Link to='/event' className="slide first-slide">
+                <Link to="/event" className="slide first-slide">
                   <div className='slide__info'>
                     <p className='slide__header'>Митап HR Tech</p>
                     <p className='slide__text'>Рассмотрим опыт сразу нескольких крупных компаний в области HR Tech</p>

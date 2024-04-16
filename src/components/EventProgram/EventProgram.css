@@ -1,9 +1,7 @@
 .program {
   font-family: 'YandexSans';
   font-weight: 400;
-  /* display: flex; */
   max-width: 1360px;
-  /* justify-content: space-between; */
   margin: 32px auto;
   align-items: center;
 }

@@ -1,6 +1,5 @@
 import './Coffee.css';
 import imgTeam from './../../images/team.png';
-// import coffee from './../../images/coffee.svg';
 import { Link } from 'react-router-dom';
 
 function Coffee() {

@@ -2,10 +2,8 @@
   display: flex;
   max-width: 1360px;
   height: 600px;
-  /* justify-content: space-between; */
   margin: 32px auto;
   align-items: center;
-  /* background-color: #FFEBA2; */
   background-color: #F8E5FF;
   font-family: 'YandexSans';
   font-weight: 400;
@@ -46,6 +44,10 @@
   color: #fefefe;
   cursor: pointer;
   text-decoration: none;
+}
+
+.coffee__button:hover {
+  background-color: #3029D7;
 }
 
 .coffee__img {

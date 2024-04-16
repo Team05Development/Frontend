@@ -18,7 +18,37 @@ class MainApi {
     }
 
     getEvents() {
-      return fetch(`${BASE_URL}`, {
+      return fetch(`${BASE_URL}/?start_date=2024-04-01&end_date=2024-05-01`, {
+        method: 'GET',
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+      .then(this._checkResponse);
+    }
+
+    getEventsPast() {
+      return fetch(`${BASE_URL}?start_date=2024-01-01&end_date=2024-04-01`, {
+        method: 'GET',
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+      .then(this._checkResponse);
+    }
+
+    getOneEvent (id) {
+      return fetch(`${BASE_URL}${id}/`, {
+        method: 'GET',
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+      .then(this._checkResponse);
+    }
+
+    getEventsDate(dateStart, dateEnd) {
+      return fetch(`${BASE_URL}?start_date=${dateStart}&end_date=${dateEnd}`, {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",

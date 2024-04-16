@@ -9,21 +9,19 @@ import Collection from './../Collection/Collection';
 import Coffee from './../Coffee/Coffee';
 import Past from './../Past/Past';
 import Footer from './../Footer/Footer';
-import Login from './../Login/Login';
 
 function Main(props) {
   return (
     <section>
-      <Login />
-      <Header />
+      <Header handleOpenPopupLogin={props.handleOpenPopupLogin} />
       <main>
         <Promo />
-        <Filters />
+        <Filters updateValueCheckbox={props.updateValueCheckbox} updateFilters={props.updateFilters} />
         <Upcoming cards={props.cards} />
         <Future cards={props.cards}/>
         <Collection />
         <Coffee />
-        <Past cards={props.cards} />
+        <Past cards={props.cardsPast} />
       </main>
       <Footer />
     </section>

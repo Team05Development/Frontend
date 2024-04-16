@@ -3,13 +3,19 @@ import './Card.css';
 function Card(props) {
 
 
-  function getDataInf(n) {
+  function getDateInfo(n) {
     let day = n.slice(8,);
     let mnth = n.slice(5,7);
     
-    let data = `${day}.${mnth}`;
+    let data = ` ${day}.${mnth}`;
 
     return data
+  }
+
+  function getTimeInfo(n) {
+    let time = n.slice(0,5);
+
+    return time
   }
 
   function getColorRegister() {
@@ -34,8 +40,8 @@ function Card(props) {
       <div className='card__info-container'>
         <p className='card__info-text'>{(props.card.format.id === 1 ? props.card.format.name : props.card.city )}</p>
         <div className='card__info-data'>
-          <p className='card__info-text'>{getDataInf(props.card.date)}</p>
-          <p className='card__info-text'>10:00</p>
+          <p className='card__info-text'>{props.card.day_of_week + getDateInfo(props.card.date)}</p>
+          <p className='card__info-text'>{getTimeInfo(props.card.time)}</p>
         </div>
       </div>
       <button className='button__like like-off'></button>

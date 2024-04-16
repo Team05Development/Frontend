@@ -8,10 +8,8 @@
   display: flex;
   flex-direction: column;
   max-width: 1360px;
-  /* justify-content: space-between; */
   margin: 24px auto;
   align-items: center;
-  /* background-color: #86b2de; */
   height: 322px;
 }
 
@@ -38,9 +36,18 @@
   margin-right: 32px;
 }
 
+.footer-list__item:hover {
+  opacity: 0.8;
+}
+
 .footer-list__link {
   text-decoration: none;
   color: #fefefe;
+  height: 32px;
+}
+
+.footer-list__link:hover {
+  opacity: 0.8;
 }
 
 .list-social {

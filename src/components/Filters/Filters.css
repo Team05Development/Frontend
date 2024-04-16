@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  position: relative;
 }
 
 .filter-header {
@@ -30,14 +31,11 @@
   border: 2px solid #E5E8EC;
   padding: 12px 16px;
   color: #212529;
-  /* background-color: ; */
   width: 210px;
   appearance:none;
-  position: relative;
 }
 
 .filter-select::before {
-  /* content: url(./../../images/icon-filters.svg); */
   content: '';
   width: 100px;
   height: 60px;
@@ -50,31 +48,54 @@
   display: block;
 }
 
-
-
 .button_input {
   cursor: pointer;
   background-color: #fefefe;
+  position: relative;
 }
 
-.input-container {
+.filter-item::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(./../../images/icon-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 14px;
+  right: 16px;
+  position: absolute;
+  z-index: 1;
+}
+
+.input-cover {
   width: 1360px;
-  min-height: 60px;
+  min-height: 36px;
   border-radius: 16px;
   border: 2px solid #E0DEFF;
-  visibility: visible;
   margin-top: 10px;
   padding: 15px 5px;
 }
 
-.input-container_hidden {
+.input-cover__hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.input-container {
+  visibility: visible;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-container__hidden {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
 .input_type_checkbox {
-  /* appearance: none; */
+  appearance: none;
 }
 
 .filters__label {
@@ -83,7 +104,7 @@
   padding: 4px 12px;
   background-color: #fff;
   cursor: pointer;
-  margin-right: 5px;
+  margin: 0 5px 10px 0;
 }
 
 input[type="checkbox"]:checked + .filters__label {

@@ -1,10 +1,7 @@
 .collection {
-  /* display: flex; */
   max-width: 1360px;
-  /* justify-content: space-between; */
   margin: 32px auto;
   align-items: center;
-  /* background-color: #7d7d7d; */
   font-family: 'YandexSans';
   font-weight: 400;
 }
@@ -103,6 +100,7 @@
   flex-direction: column;
   justify-content: end;
   cursor: pointer;
+  color: #fff;
 }
 
 .item-header {

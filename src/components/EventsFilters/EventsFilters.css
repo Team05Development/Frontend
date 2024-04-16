@@ -32,10 +32,26 @@
   cursor: pointer;
 }
 
+.notfound__button:hover {
+  background-color: #3029D7;
+}
+
 .notfound__image {
   width: 769px;
   height: 457px;
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.page-events {
+  margin: 0 auto;
+  width: 1360px;
+    
+}
+
+.filter-events__header {
+  font-size: 48px;
+  line-height: 42px;
+  font-weight: bold;
 }

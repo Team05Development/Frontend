@@ -1,9 +1,7 @@
 .event {
   font-family: 'YandexSans';
   font-weight: 400;
-  /* display: flex; */
   max-width: 1360px;
-  /* justify-content: space-between; */
   margin: 32px auto;
   align-items: center;
 }
@@ -11,7 +9,7 @@
 .event__banner-info {
   display: flex;
   width: 1360px;
-  margin: 0 auto;
+  margin: 64px auto;
   justify-content: space-between;
 }
 
@@ -102,4 +100,9 @@
   border: none;
   cursor: pointer;
   margin: 20px 0 0 30px;
+}
+
+.button__type_reg:hover {
+  background-color: #3029D7;
+  color: #fefefe;
 }

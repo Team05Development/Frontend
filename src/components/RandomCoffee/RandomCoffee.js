@@ -1,4 +1,3 @@
-
 import './RandomCoffee.css';
 import Header from './../Header/Header';
 import Footer from './../Footer/Footer';
@@ -8,11 +7,17 @@ import imgone from './../../images/img-rc-1.png';
 import imgtwo from './../../images/img-rc-2.png';
 import imgthree from './../../images/img-rc-3.png';
 import imgitw from './../../images/itworks-Img.png';
+import { useLayoutEffect } from 'react';
 
-function RandomCoffee() {
+function RandomCoffee(props) {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
     <section>
-      <Header />
+      <Header handleOpenPopupLogin={props.handleOpenPopupLogin}/>
       <div className='random-coffee'>
         <Coffee />
         <p className='random-coffee__paragraph'>Чтобы вернуть кайф от интересных разговоров, мы сделали платформу для встреч на «случайный кофе» с неслучайными людьми. Это возможность сформировать правильное окружение, которое поможет находить новые возможности, лучше понимать себя, свою сферу деятельности и быстрее достигать поставленных целей.</p>
